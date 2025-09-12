@@ -8,6 +8,7 @@ import RouteOptimization from './components/RouteOptimization';
 import EnergyManagement from './components/EnergyManagement';
 import TrafficControl from './components/TrafficControl';
 import SectionThroughput from './components/SectionThroughput';
+import ReportScheduling from './components/ReportScheduling';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -30,6 +31,8 @@ function App() {
         return <RouteOptimization />;
       case 'energy':
         return <EnergyManagement />;
+      case 'reports':
+        return <ReportScheduling />;
       case 'analytics':
         return (
           <div className="flex items-center justify-center h-96">

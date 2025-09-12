@@ -10,7 +10,8 @@ import {
   Radio,
   BarChart2,
   Plus,
-  Map
+  Map,
+  FileText
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -28,6 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange }) => {
     { id: 'throughput', label: 'Section Throughput', icon: BarChart2 },
     { id: 'routes', label: 'Route Optimization', icon: Route },
     { id: 'energy', label: 'Energy Management', icon: Zap },
+    { id: 'reports', label: 'Automated Reports', icon: FileText },
     { id: 'analytics', label: 'Analytics', icon: BarChart3 },
     { id: 'alerts', label: 'Alerts', icon: AlertTriangle },
     { id: 'settings', label: 'Settings', icon: Settings },
