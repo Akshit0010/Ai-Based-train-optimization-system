@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import TrainStatus from './components/TrainStatus';
 import AddTrain from './components/AddTrain';
+import TrackVisualization from './components/TrackVisualization';
 import RouteOptimization from './components/RouteOptimization';
 import EnergyManagement from './components/EnergyManagement';
 import TrafficControl from './components/TrafficControl';
@@ -19,6 +20,8 @@ function App() {
         return <TrainStatus />;
       case 'add-train':
         return <AddTrain />;
+      case 'track-visualization':
+        return <TrackVisualization />;
       case 'traffic-control':
         return <TrafficControl />;
       case 'throughput':
